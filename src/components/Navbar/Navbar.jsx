@@ -30,12 +30,12 @@ const Navbar = () => {
     },
     {
       name: `Invite Now`,
-      url: `https://discord.com/api/oauth2/authorize?client_id=${user?.id}&permissions=1090182971249&scope=bot%20applications.commands`,
+      url: `https://discord.com/api/oauth2/authorize?client_id=1251809796299165726&permissions=1090182971249&scope=bot%20applications.commands`,
       target: true,
     },
     {
       name: `Support`,
-      url: `https://discord.gg/PcUVWApWN3`,
+      url: `https://discord.gg/XqbR6Mg45C`,
       target: true,
     },
   ];
