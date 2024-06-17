@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "push": "git add . && git commit -m 'Commit' && git push -u origin main "
   },
   "dependencies": {
     "@discordjs/opus": "^0.9.0",
