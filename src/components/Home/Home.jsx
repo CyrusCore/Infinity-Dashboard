@@ -36,11 +36,6 @@ const Home = () => {
               <h1 className="hover_line"> {feature.title} </h1>
               <p> {feature.description} </p>
             </div>
-            <img
-              src={feature.image}
-              alt={feature.title}
-              className="feature_img"
-            />
           </div>
         ))}
       </div>
