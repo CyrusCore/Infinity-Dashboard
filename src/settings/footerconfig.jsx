@@ -7,7 +7,7 @@ const FooterSocials = [
     icon: <AiFillYoutube />,
   },
   {
-    link: "https:www.instagram.com/xaero.id",
+    link: "https://instagram.com/xaero.id",
     icon: <AiFillInstagram />,
   },
   {
