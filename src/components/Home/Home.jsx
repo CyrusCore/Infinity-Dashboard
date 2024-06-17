@@ -7,17 +7,14 @@ const FeatureOptions = [
   {
     title: `Music System`,
     description: `A Advance Music System With Custom Channel Support Where you can play songs and control with buttons and see queue directly on top`,
-    image: channelimg,
   },
   {
     title: `Music Player`,
     description: `A Beautiful Music Player With Buttons. You Can Control Player By Buttons`,
-    image: playerimg,
   },
   {
     title: `Help Command`,
     description: `A Beautiful Help Command So You Can See What Features and Commands Bot Have`,
-    image: helpimg,
   },
 ];
 
