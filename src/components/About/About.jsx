@@ -3,7 +3,45 @@ import { GlobalContext } from "../../Contexts/Context";
 import "./about.css";
 
 const About = () => {
-  const { user, about } = useContext(GlobalContext);
+  const [user, setUser] = useState(null);
+  const [about, setAbout] = useState(null);
+  const [cmdsData, setCmdsData] = useState(null);
+  // fetching home data
+  useEffect(() => {
+    const getData = async () => {
+      const headers = {
+      'User-Agent': 'curl/7.64.1',  // Adjust this version number based on your actual curl version
+      'Accept': '*/*'
+      };
+      const response = await axios.get(`http://infinity-api.kappurumedia.my.id:8000/home`, { headers });
+      setUser(response.data);
+    };
+    getData();
+  }, []);
+  // fetching about data
+  useEffect(() => {
+    const getData = async () => {
+    const headers = {
+      'User-Agent': 'curl/7.64.1',  // Adjust this version number based on your actual curl version
+      'Accept': '*/*'
+    };
+      const response = await axios.get(`http://infinity-api.kappurumedia.my.id:8000/about`, { headers });
+      setAbout(response.data);
+    };
+    getData();
+  }, []);
+  // fetching commands data
+  useEffect(() => {
+    const getData = async () => {
+    const headers = {
+      'User-Agent': 'curl/7.64.1',  // Adjust this version number based on your actual curl version
+      'Accept': '*/*'
+    };
+      const response = await axios.get(`http://infinity-api.kappurumedia.my.id:8000/commands`, { headers });
+      setCmdsData(response.data);
+    };
+    getData();
+  }, []);
   const info = [
     {
       name: `Users`,

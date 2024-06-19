@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
-    "push": "git add . && git commit -m 'Commit' && git push -u origin main "
+    "push": "git add . && git commit -m 'infinity' && git push -u origin main"
   },
   "dependencies": {
     "@discordjs/opus": "^0.9.0",

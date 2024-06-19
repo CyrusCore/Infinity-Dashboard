@@ -39,24 +39,36 @@ const App = () => {
   // fetching home data
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(`${config.baseurl}/home`);
-      setUser(data);
+      const headers = {
+      'User-Agent': 'curl/7.64.1',  // Adjust this version number based on your actual curl version
+      'Accept': '*/*'
+      };
+      const response = await axios.get(`http://infinity-api.kappurumedia.my.id:8000/home`, { headers });
+      setUser(response.data);
     };
     getData();
   }, []);
   // fetching about data
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(`${config.baseurl}/about`);
-      setAbout(data);
+    const headers = {
+      'User-Agent': 'curl/7.64.1',  // Adjust this version number based on your actual curl version
+      'Accept': '*/*'
+    };
+      const response = await axios.get(`http://infinity-api.kappurumedia.my.id:8000/about`, { headers });
+      setAbout(response.data);
     };
     getData();
   }, []);
   // fetching commands data
   useEffect(() => {
     const getData = async () => {
-      const { data } = await axios.get(`${config.baseurl}/commands`);
-      setCmdsData(data);
+    const headers = {
+      'User-Agent': 'curl/7.64.1',  // Adjust this version number based on your actual curl version
+      'Accept': '*/*'
+    };
+      const response = await axios.get(`http://infinity-api.kappurumedia.my.id:8000/commands`, { headers });
+      setCmdsData(response.data);
     };
     getData();
   }, []);
